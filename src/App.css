@@ -41,16 +41,7 @@ body {
   background-color: #f0f0f0;
 }
 
-/* .display-form {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 1rem;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-} */
+
 
 .display-form {
   position: absolute; /* Or 'fixed' if you want it to stay in place during scrolling */
