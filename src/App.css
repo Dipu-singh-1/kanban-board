@@ -54,7 +54,7 @@ body {
 
 .display-form {
   position: absolute; /* Or 'fixed' if you want it to stay in place during scrolling */
-  top: 50px; /* Adjust this to position it just below the display button */
+  top: 70px; /* Adjust this to position it just below the display button */
   left: 10px; /* This places the form near the left corner of the screen */
   background-color: #fff;
   border: 1px solid #ddd;
