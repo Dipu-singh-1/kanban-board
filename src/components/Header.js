@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
-import '../App.css';
+import React, { useState, useEffect } from "react";
+import "../App.css";
 
 function Header({ onDisplayChange }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [grouping, setGrouping] = useState('status');
-  const [sorting, setSorting] = useState('priority');
+  const [grouping, setGrouping] = useState("status");
+  const [sorting, setSorting] = useState("priority");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  useEffect(() => {
     onDisplayChange(grouping, sorting);
     setIsOpen(false);
-  };
+  }, [grouping, sorting, onDisplayChange]);
 
   return (
     <header className="header">
-     
-    
       <button onClick={() => setIsOpen(!isOpen)} className="display-button">
-      <img
+        <img
           src="/photo/Display.svg"
           alt="Before Display Icon"
           className="icon-before"
@@ -30,7 +27,7 @@ function Header({ onDisplayChange }) {
         />
       </button>
       {isOpen && (
-        <form onSubmit={handleSubmit} className="display-form">
+        <div className="display-form">
           <div>
             <label htmlFor="grouping">Grouping</label>
             <select
@@ -54,8 +51,7 @@ function Header({ onDisplayChange }) {
               <option value="title">Title</option>
             </select>
           </div>
-          <button type="submit">Apply</button>
-        </form>
+        </div>
       )}
     </header>
   );

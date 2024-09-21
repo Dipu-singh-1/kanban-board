@@ -180,6 +180,21 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.card-title-container {
+  display: flex;
+}
+
+.icon-inline {
+  width: 16px; 
+  height: 16px;
+  margin-right: 4px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+
 .ticket-id {
   font-size: 14px;
   color: #6b6b6b;
@@ -202,8 +217,16 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(195, 187, 187);
+  border-radius: 50%;
+  margin-right: 4px;
+  display: inline-block;
+}
+
 .card-footer {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
